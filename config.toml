@@ -1,0 +1,88 @@
+# 基本信息
+baseURL = "http://117.72.195.102"
+title = "我的个人博客"
+theme = "PaperMod"
+
+# 语言设置
+languageCode = "zh-cn"
+defaultContentLanguage = "zh"
+
+# 分页设置
+pagerSize = 10
+
+# 主题参数
+[params]
+  env = "production"
+  title = "我的个人博客"
+  description = "记录生活琐碎，分享技术文章"
+  author = "博主"
+  
+  # 首页显示内容
+[params.homeInfoParams]
+  Title = "欢迎来到我的博客"
+  Content = "记录生活琐碎，分享技术文章"
+
+  
+  # 社交链接（可选）
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/你的用户名"
+  
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:你的邮箱@example.com"
+
+# 菜单设置
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+  
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 2
+  
+  [[menu.main]]
+    identifier = "tags"
+    url = "/tags/"
+    weight = 3
+  
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 4
+  
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 5
+  
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 6
+
+# 搜索配置
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 代码高亮
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+# 其他设置
+[params.assets]
+  disableHLJS = true
+
+[params.fuseOptions]
+  ignoreLocation = true
+  threshold = 0
+  includeMatches = true
