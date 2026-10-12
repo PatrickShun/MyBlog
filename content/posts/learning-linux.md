@@ -16,3 +16,5 @@ description: "记录 Ubuntu 服务器的基本操作"
 ls -la    # 列出所有文件（包括隐藏文件）
 pwd       # 显示当前目录路径
 cd /path  # 切换目录
+
+123
